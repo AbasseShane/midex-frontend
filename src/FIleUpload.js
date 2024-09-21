@@ -12,7 +12,7 @@ function FIleUpload() {
     const formData = new FormData();
     formData.append("file", file);
 
-    const response = await fetch("https://34.170.136.204:8080/upload", {
+    const response = await fetch("http://34.170.136.204:8080/upload", {
       method: "POST",
       body: formData,
     });
